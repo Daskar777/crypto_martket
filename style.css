@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+@keyframes menu_animation {
+  from {
+    color: white; }
+  to {
+    color: #6610f2; } }
+
+@media screen and (max-width: 940px) {
+  .header_wrap {
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .header_wrap nav {
+      margin: 3% 10px 0 10px;
+      order: 2; }
+    .header_wrap .container {
+      max-width: 920px; }
+  .top_banner_wrap {
+    padding: 50px 0 50px 0; }
+    .top_banner_wrap section {
+      flex-wrap: wrap;
+      padding: 20px;
+      align-items: center; } }
+
+@media screen and (max-width: 740px) {
+  .container nav {
+    display: none; } }
+
+body {
+  background-color: #ebf4f8;
+  font-family: Ubuntu;
+  font-weight: 400; }
+  body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  body li {
+    display: inline-block;
+    margin-left: 70px; }
+    body li a {
+      text-decoration: none;
+      text-transform: capitalize;
+      color: #2c2738;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px;
+      letter-spacing: 0;
+      text-align: right;
+      font-family: Ubuntu; }
+      body li a:hover {
+        color: #0880ae; }
+
+h1 {
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 51px; }
+
+header {
+  padding: 25px 0 24px 0;
+  background-color: #dae8ee; }
+
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 15px 0 15px; }
+
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .logo_wrap span {
+    font-weight: 500;
+    font-size: 25px; }
+  .logo_wrap img {
+    margin: 0 10px 0 10px; }
+
+#svg_search_wrap {
+  position: relative; }
+
+#search_icon {
+  position: absolute;
+  right: 23.26%;
+  top: 25.53%; }
+
+.top_banner_wrap {
+  padding: 100px 0 100px 0;
+  background-color: white;
+  margin-bottom: 60px; }
+  .top_banner_wrap section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .top_banner_wrap section p {
+      max-width: 634px;
+      color: #728191;
+      font-size: 20px; }
+
+.stock_ex_wrap {
+  margin: 0 -15px 0 -15px; }
+
+.stock_ex_header {
+  background-color: #DAE8EE;
+  border-radius: 24px 24px 0px 0px;
+  padding: 18px 30px 17px 40px;
+  display: flex;
+  justify-content: space-between;
+  color: #728191;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px; }
+  .stock_ex_header div:last-child {
+    margin-right: 60px; }
+
+.stock_ex_body {
+  background-color: white; }
+
+.stock_ex_unit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px dashed #DBE2EA; }
+
+.stock_numeration {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0;
+  text-align: center;
+  background: url("img/number_wrap.png") no-repeat;
+  background-size: contain;
+  width: 39px;
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px; }
+
+.stock_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px 0 30px 0; }
+  .stock_logo p {
+    margin-left: 20px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left; }
+
+.stock_daily_turnover,
+.stock_commission {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0;
+  text-align: center;
+  position: relative; }
+
+.stock_commission:before {
+  content: '';
+  position: absolute;
+  background: url("img/sss.png") no-repeat;
+  width: 15px;
+  height: 18px;
+  right: -20px;
+  top: 0; }
+
+.progress_wrap {
+  width: 200px;
+  height: 15px;
+  background: #CACED3;
+  border-radius: 7px;
+  margin: 5px; }
+
+.progress_line {
+  height: 15px;
+  background: linear-gradient(90deg, #8EE3D5 0%, #16A48C 100%);
+  border-radius: 7px;
+  position: relative; }
+
+.progress_pump {
+  width: 25px;
+  height: 34px;
+  background: linear-gradient(90deg, #8EE3D5 0%, #16A48C 100%);
+  border-radius: 8px;
+  position: absolute;
+  top: -60%;
+  right: 0; }
+
+.progress_counter {
+  text-align: center;
+  font-size: 25px;
+  line-height: 29px;
+  margin: 5px; }
+  .progress_counter span {
+    position: relative; }
+    .progress_counter span:before {
+      content: '';
+      position: absolute;
+      background: url("img/sss.png") no-repeat;
+      width: 15px;
+      height: 18px;
+      right: -20px;
+      top: 0; }
+
+.stock_links {
+  margin-right: 30px; }
+
+.overview,
+.open {
+  box-sizing: border-box;
+  width: 160px;
+  height: 50px;
+  border-radius: 15px;
+  margin: 5px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center; }
+
+.overview {
+  color: #0880AE;
+  background-color: white;
+  border: 1px solid #0880AE; }
+
+.open {
+  background-color: #0880AE;
+  border: none;
+  color: #FFFFFF; }
+
+#Poloniex_wrap .progress_line {
+  width: 98%; }
+
+#EXMO_wrap .progress_line {
+  width: 98%; }
+
+#Stormgain_wrap .progress_line {
+  width: 97%; }
+
+#Upbit_wrap .progress_line {
+  width: 96%; }
+
+#LiveCoin_wrap .progress_line {
+  width: 95%; }
