@@ -101,25 +101,68 @@ header {
       color: #728191;
       font-size: 20px; }
 
+.crypto_currency_slider {
+  overflow: hidden;
+  width: 650px;
+  height: 80px;
+  position: relative;
+  background-color: #1b1e21; }
+
+.slide_but button {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: url("img/sterl.png") no-repeat;
+  background-size: contain;
+  right: -11px;
+  top: 20px;
+  z-index: 100; }
+
+.slider_unit_wrap {
+  display: flex;
+  position: absolute; }
+
+.slide_unit {
+  padding: 20px 0;
+  width: 300px;
+  background-color: #d39e00;
+  text-align: center;
+  margin-right: 30px;
+  display: inline-block; }
+
 .stock_ex_wrap {
-  margin: 0 -15px 0 -15px; }
+  background-color: #EBF4F8; }
 
 .stock_ex_header {
+  border-radius: 24px 24px 0 0;
   background-color: #DAE8EE;
-  border-radius: 24px 24px 0px 0px;
-  padding: 18px 30px 17px 40px;
+  padding: 18px 0 17px 0;
   display: flex;
-  justify-content: space-between;
   color: #728191;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 21px; }
+  line-height: 21px;
+  text-align: center;
+  align-items: center; }
   .stock_ex_header div:last-child {
-    margin-right: 60px; }
+    margin-right: 60px;
+    width: 150px; }
+  .stock_ex_header div:first-child {
+    margin: 30px;
+    width: 39px; }
+  .stock_ex_header div:nth-child(2) {
+    width: calc(20% + 20px); }
+  .stock_ex_header div:nth-child(3) {
+    width: 210px; }
+  .stock_ex_header div:nth-child(4) {
+    width: 22%; }
+  .stock_ex_header div:nth-child(5) {
+    width: 22%; }
 
 .stock_ex_body {
-  background-color: white; }
+  background-color: white;
+  border-radius: 0 0 24px 24px; }
 
 .stock_ex_unit {
   display: flex;

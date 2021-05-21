@@ -73,33 +73,75 @@ header
       max-width: 634px
       color: #728191
       font-size: 20px
-      
+$width36: 36
+.crypto_currency_slider
+  overflow: hidden
+  width: 650px
+  height: 80px
+  position: relative
+  background-color: #1b1e21
+.slide_but
+  button
+    position: absolute
+    width: 36px
+    height: 36px
+    background: url("img/sterl.png") no-repeat
+    background-size: contain
+    right: -11px
+    top: 20px
+    z-index: 100
+
+
+.slider_unit_wrap
+  display: flex
+  position: absolute
+  left:
+.slide_unit
+  padding: 20px 0
+  width: 300px
+  background-color: #d39e00
+  text-align: center
+  margin-right: 30px
+  display: inline-block
       
       
 // ----------------- Stock exchange list----------------- //
 .stock_ex_wrap
-  margin: 0 -15px 0 -15px
-
+  background-color: #EBF4F8
+  //border-radius: 24px
 .stock_ex_header
+  border-radius: 24px 24px 0 0
   background-color: #DAE8EE
-  border-radius: 24px 24px 0px 0px
-  padding: 18px 30px 17px 40px
+  padding: 18px 0 17px 0
   display: flex
-  justify-content: space-between
   color: rgba(114, 129, 145, 1)
   font-style: normal
   font-weight: 500
   font-size: 18px
   line-height: 21px
+  text-align: center
+  align-items: center
   div
     &:last-child
       margin-right: 60px
-      
+      width: 150px
+    &:first-child
+      margin: 30px
+      width: 39px
+    &:nth-child(2)
+      width: calc(20% + 20px)
+    &:nth-child(3)
+      width: 210px
+    &:nth-child(4)
+      width: 22%
+    &:nth-child(5)
+      width: 22%
       
       
 // ----------------- Stock exchange template----------------- //
 .stock_ex_body
   background-color: white
+  border-radius: 0 0 24px 24px
   
 .stock_ex_unit
   display: flex
@@ -107,6 +149,7 @@ header
   border-bottom: 2px dashed #DBE2EA
   
 .stock_numeration
+
   font-size: 20px
   font-style: normal
   font-weight: 500
@@ -164,6 +207,7 @@ header
   background: #CACED3
   border-radius: 7px
   margin: 5px
+
   
 .progress_line
   height: 15px
