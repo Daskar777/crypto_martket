@@ -73,38 +73,77 @@ header
       max-width: 634px
       color: #728191
       font-size: 20px
+.crypto_description_part
+  width: 1400px
 $width36: 36
+
+
+
+// ----------------- slider ------------ //
+.crypto_currency_slider_wrap
+  position: relative
+  width: 40%
 .crypto_currency_slider
   overflow: hidden
-  width: 650px
-  height: 80px
-  position: relative
-  background-color: #1b1e21
+  font-size: 18px
+  display: flex
 .slide_but
   button
     position: absolute
     width: 36px
     height: 36px
-    background: url("img/sterl.png") no-repeat
+    background: url("img/strel.svg") no-repeat
     background-size: contain
-    right: -11px
-    top: 20px
+    right: -46px
+    top: calc(50% - 18px)
     z-index: 100
-
+    border: none
 
 .slider_unit_wrap
   display: flex
-  position: absolute
-  left:
 .slide_unit
-  padding: 20px 0
+  padding: 16px 15px 16px 15px // top right bottom left
   width: 300px
-  background-color: #d39e00
-  text-align: center
+  box-sizing: border-box
   margin-right: 30px
-  display: inline-block
-      
-      
+  display: flex
+  align-items: center
+.small_logo_wrap
+  padding: 10px
+  margin-right: 15px
+  background: rgba(214, 207, 110, 0.1)
+  border-radius: 10px
+.small_main_wrap
+  background-color:
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  height: 100%
+.text_line_wrap
+  span
+    &:first-child
+      margin-right: 10px
+    &:last-child
+      color: #728191
+.numbers_line_wrap
+  font-weight: 500
+  display: flex
+  justify-content: space-between
+  padding-right:
+  span
+    &:first-child
+      font-size: 18px
+    &:last-child
+      color: #F32F22
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        right: -13px
+        top: 0%
+        width: 11px
+        height: 14px
+        background: url("img/proc.svg") no-repeat
 // ----------------- Stock exchange list----------------- //
 .stock_ex_wrap
   background-color: #EBF4F8
