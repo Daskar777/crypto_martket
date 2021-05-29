@@ -26,7 +26,7 @@
     display: none; } }
 
 body {
-  background-color: #ebf4f8;
+  background-color: #ffffff;
   font-family: Ubuntu;
   font-weight: 400; }
   body ul {
@@ -58,7 +58,9 @@ h1 {
 
 header {
   padding: 25px 0 24px 0;
-  background-color: #dae8ee; }
+  background-color: #dae8ee;
+  margin-bottom: 100px;
+  box-shadow: 0px 35px 70px rgba(0, 0, 0, 0.08); }
 
 .container {
   max-width: 1290px;
@@ -89,9 +91,8 @@ header {
   top: 25.53%; }
 
 .top_banner_wrap {
-  padding: 100px 0 100px 0;
   background-color: white;
-  margin-bottom: 60px; }
+  margin-bottom: 100px; }
   .top_banner_wrap section {
     display: flex;
     align-items: center;
@@ -106,12 +107,17 @@ header {
 
 .crypto_currency_slider_wrap {
   position: relative;
-  width: 40%; }
+  width: 95%;
+  height: 220px;
+  overflow: hidden; }
 
 .crypto_currency_slider {
-  overflow: hidden;
+  position: absolute;
+  left: 0;
   font-size: 18px;
-  display: flex; }
+  display: flex;
+  height: 100%;
+  width: 100%; }
 
 .slide_but button {
   position: absolute;
@@ -125,15 +131,19 @@ header {
   border: none; }
 
 .slider_unit_wrap {
-  display: flex; }
+  display: flex;
+  align-items: center;
+  height: 100%; }
 
 .slide_unit {
   padding: 16px 15px 16px 15px;
+  height: 100px;
   width: 300px;
   box-sizing: border-box;
-  margin-right: 30px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.05);
+  margin-left: 35px; }
 
 .small_logo_wrap {
   padding: 10px;
@@ -172,7 +182,8 @@ header {
       background: url("img/proc.svg") no-repeat; }
 
 .stock_ex_wrap {
-  background-color: #EBF4F8; }
+  background-color: #EBF4F8;
+  padding-top: 60px; }
 
 .stock_ex_header {
   border-radius: 24px 24px 0 0;
